@@ -1,0 +1,49 @@
+<app-notfound
+  [visible]="!place"
+  notFoundMessage="Items not fould!"
+  resetLinkText="Go to Homepage!"
+></app-notfound>
+
+<div *ngIf="place" class="container">
+  <div class="exploreText">
+    {{ place.name }}
+  </div>
+  <div class="placeImage">
+    <img [src]="place.imageUrl" [alt]="place.name" />
+  </div>
+
+  <div class="details">
+      <span class="name">
+        {{ place.name }}
+      </span>
+
+      <span class="address">
+        {{place.address}}
+      </span>
+
+
+    <div>
+      <span class="spReviews"> {{place.reviews}} </span> || 
+      <span class="spOffday" *ngFor="let day of place.offday; let lastday = last">
+        {{ day }}{{ !lastday ? ', ' : '' }}
+      </span>
+    </div>
+    
+    <div class="divTags">
+      <span *ngFor="let tag of place.tags; let last = last">
+        {{ tag }}
+      </span>
+    </div>
+
+    <div class="divDescription">
+      {{place.description}}
+    </div>
+    <div class="price">
+      <span>
+        {{ place.entryfee | currency }}
+      </span>
+    </div>
+
+    <button (click)="gotoHomePage()">Go to Homepage</button>
+  </div>
+</div>

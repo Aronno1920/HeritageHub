@@ -1,0 +1,42 @@
+.searchHeader{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 2rem;
+  color: #21447b;
+}
+div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+div input {
+  border-radius: 10rem 0 0 10rem;
+  border: none;
+  height: 3rem;
+  width: 30rem;
+  background-color: #a5e0d5;
+  padding: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  outline: none;
+}
+
+div button {
+  color: #21447b;
+  height: 3rem;
+  width: 5rem;
+  font-size: 1rem;
+  border-radius: 0 10rem 10rem 0;
+  border: none;
+  background-color: #21447b;
+  color: white;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+div button:hover {
+  opacity: 1;
+  cursor: pointer;
+}

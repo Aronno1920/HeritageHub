@@ -1,0 +1,78 @@
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li a {
+  height: 20.5rem;
+  width: 20rem;
+  border: 1px solid #20b396;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #20b396;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul li a img {
+  max-height: 190px;
+  height: 190px;
+}
+
+li a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* product content design */
+.content {
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+.content .name {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  min-height: 40px;
+}
+
+.product-tag-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 2rem;
+  color: gray;
+  min-height: 20px;
+}
+
+.product-delivery-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+.product-delivery-price .offday {
+  flex: 6;
+  color: grey;
+  font-size: 12px;
+}
+.product-delivery-price .offday::before {
+  content: "Closed: ";
+}
+
+.product-delivery-price .reviews {
+  color: grey;
+  flex: 6;
+  text-align: right;
+}
+.product-delivery-price .reviews::after {
+  content: " reviews";
+}

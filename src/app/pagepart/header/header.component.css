@@ -1,0 +1,43 @@
+header {
+  padding: 0;
+  border-bottom: 2px solid #20b396;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: #00715b;
+}
+
+/* site branding & Logo part */
+.sitebrand {
+  flex: 1;
+}
+.sitebrand:hover{
+  color: white;
+  background-color: #20b396;
+}
+
+/* Navigation Manu part */
+nav {
+  flex: 4;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: end;
+}
+nav ul li a {
+  padding: 1em;
+  display: inline-block;
+  color: #00715b;
+}
+
+a:hover {
+  color: white !important;
+  background-color: #20b396;
+}

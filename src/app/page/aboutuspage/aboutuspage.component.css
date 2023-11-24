@@ -1,0 +1,80 @@
+.page-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f1;
+}
+.page-content .content-area{
+    min-height: 70vh;
+    max-width: 1440px;
+    width: 1440px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: #00715b;
+}
+
+.content{
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+.content ul li{
+    margin-bottom: 5px;
+}
+
+.content .teamMember{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.content .team{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 3;
+    border: 1px solid #21447b;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0rem 1rem;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.content .team img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-radius: 50%;
+}
+.content .team .name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #21447b;
+}
+.content .team .role{
+    font-size: 16px;
+    color: #20b396;
+}
+
+.content .team .socialMedia{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content .team .socialMedia img{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 24px;
+    cursor: pointer;
+}

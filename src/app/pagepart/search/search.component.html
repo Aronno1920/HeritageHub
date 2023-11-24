@@ -1,0 +1,12 @@
+<div class="searchHeader">
+  Where to?
+</div>
+<div>
+  <input
+    type="text"
+    placeholder="Places to go, things to do, hotels"
+    [(ngModel)]="searchItem"
+    (change)="search()"
+  />
+  <button (click)="search()">Search</button>
+</div>

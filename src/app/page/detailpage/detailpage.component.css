@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 70vh;
+  max-width: 1440px;
+}
+.container .exploreText{
+  color: #21447b;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left !important;
+  margin: 10px;
+}
+.container .exploreText::before{
+  content: 'Explore';
+  color: #20b396;
+  font-size: 24px;
+}
+.container .placeImage{
+  margin: 0;
+  position: relative;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 500px;
+  min-height: 500px;
+  opacity: 1;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  color: black;
+  margin-left: 1rem;
+}
+.details .name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #21447b;
+}
+
+.details .divTags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.details .divTags > span {
+  padding: 4px;
+  margin-right: .5rem;
+  border-radius: 2rem;
+  background-color: #e8f7f4;
+  color: #00715b;
+}
+
+.details .spReviews::before{
+  content: 'Total';
+}
+
+.details .spReviews::after{
+  content: 'Reviews';
+}
+
+.details .spOffday::before{
+  content: 'Closed on';
+}
+
+.details .divDescription{
+  margin: 1rem 0;
+  font-size: 16px;
+}
+
+.details .price {
+  font-size: 1.8rem;
+  margin: 2rem 2rem 2rem 0;
+  color: #20b396;
+}
+.details .price::before {
+  content: "Entry Fee: ";
+  color: gray;
+}
+
+.details button {
+  color: white;
+  background-color: #21447b;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 10rem;
+  outline: none;
+}
+.details button:hover {
+  opacity: 0.9;
+}

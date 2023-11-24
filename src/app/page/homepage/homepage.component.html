@@ -1,0 +1,36 @@
+<app-search></app-search>
+<app-tags></app-tags>
+
+<app-notfound
+  [visible]="!places || places.length <= 0"
+  notFoundMessage="No place found for the search criteria!"
+  resetLinkText="Reset Search"
+></app-notfound>
+
+<ul>
+  <li *ngFor="let place of places">
+    <a routerLink="/detailpage/{{ place.id }}">
+      <img src="{{ place.imageUrl }}" alt="{{ place.name }}" />
+      <div class="content">
+        <div class="name">
+          {{ place.name }}
+        </div>
+        <div class="product-tag-time">
+          <span *ngFor="let tag of place.tags; let last = last">
+            {{ tag }}{{ !last ? ', ' : '' }}
+          </span>
+        </div>
+        <div class="product-delivery-price">
+          <div class="offday">
+            <span *ngFor="let day of place.offday">
+              {{ day }}
+            </span>
+          </div>
+          <div class="reviews">
+              {{ place.reviews }}
+          </div>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>

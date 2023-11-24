@@ -1,0 +1,48 @@
+.page-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f1;
+}
+.page-content .content-area{
+    min-height: 70vh;
+    max-width: 1440px;
+    width: 1440px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  h2{
+    color: #00715b;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+  
+  button {
+    padding: 0.5em 1em;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
